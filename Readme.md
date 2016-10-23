@@ -11,8 +11,6 @@ Arguments:
 average temperature; (8) precipitation in cm; (9) relative humidity.<br />
 Note: only columns 7-9 are used.<br />
 Template: see example in <tt>Weather</tt> subdirectory</li>
-<li>Output: Excel file called <tt>weatherfile.xlsx</tt>, placed in the <tt>weather_pathname</tt> directory, containing the
-same information as the input file plus an additional column corresponding to predictions for the number of gravid female mosquitoes.</li>
-<li>Example: <tt>Run_Model.py</tt> reads <tt>Test_Data.csv</tt> and creates an Excel file called <tt>Test_Data.xlsx</tt> in the
-<tt>Weather</tt> directory.
+<li>Output: overwrites <tt>weatherfile.csv</tt>; removes the header and adds a 10th column corresponding to predictions for the number of gravid female mosquitoes.</li>
+<li>Example: <tt>Run_Model_v2.py</tt> reads <tt>Test_Data_IO.csv</tt> in the <tt>Weather</tt> directory and replaces it with the same information, without the header and with an additional 10th column for the predicted number of gravid females.
 </ul>
